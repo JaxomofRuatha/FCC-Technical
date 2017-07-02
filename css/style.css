@@ -1,0 +1,9 @@
+html, body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#navbar {
+  height: 100%;
+  border-right: solid;
+  border-color: rgb(54, 60, 87);
+}
