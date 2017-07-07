@@ -7,3 +7,17 @@ html, body {
   border-right: solid;
   border-color: rgb(54, 60, 87);
 }
+
+#nav-header {
+  background-color: #0074be;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.nav-link {
+  list-style: none;
+  border-bottom: solid;
+  color: black;
+  width: 100%;
+}
