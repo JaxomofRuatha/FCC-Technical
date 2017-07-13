@@ -14,22 +14,22 @@
       <a href = "#Introduction" class = "nav-link">Introduction</a>
     </li>
     <li>
-      <a href = "#Introduction" class = "nav-link">Program Steps</a>
+      <a href = "#Program_Steps" class = "nav-link">Program Steps</a>
     </li>
     <li>
-      <a href = "#Introduction" class = "nav-link">Data Types and Properties</a>
+      <a href = "#Data_Types_and_Properties" class = "nav-link">Data Types and Properties</a>
     </li>
     <li>
-      <a href = "#Introduction" class = "nav-link">Basic Syntax</a>
+      <a href = "#Basic_Syntax" class = "nav-link">Basic Syntax</a>
     </li>
     <li>
-      <a href = "#Introduction" class = "nav-link">Windowing Environment</a>
+      <a href = "#Windowing_Environment" class = "nav-link">Windowing Environment</a>
     </li>
     <li>
-      <a href = "#Introduction" class = "nav-link">Input and Formatting</a>
+      <a href = "#Input_and_Formatting" class = "nav-link">Input and Formatting</a>
     </li>
     <li>
-      <a href = "#Introduction" class = "nav-link">Libraries</a>
+      <a href = "#Libraries" class = "nav-link">Libraries</a>
     </li>
   </ul>
  </nav>
@@ -59,30 +59,55 @@
           producing reports, summaries, and visualizations of data.
         </li>
       </ol>
+      There are also global statements in SAS, which persist throughout the current environment and
+      between steps. Every statement must end in a semicolon to be valid.
     </p>
   </section>
-    <section class = "main-section" id = "Introduction">
+    <section class = "main-section" id = "Data_Types_and_Properties">
     <header>
-      <h1>Introduction</h1>
+      <h1>Data Types and Properties</h1>
     </header>
     <p>
-      SAS is a thing. It is a good thing. It does stuff. And things. Data.
+      There are only two data types in SAS: character and numeric. These are stored in 8 bytes
+      unless specified by the coder otherwise.
     </p>
   </section>
-    <section class = "main-section" id = "Introduction">
+    <section class = "main-section" id = "Basic_Syntax">
     <header>
-      <h1>Introduction</h1>
+      <h1>Basic Syntax</h1>
     </header>
     <p>
-      SAS is a thing. It is a good thing. It does stuff. And things. Data.
+      A DATA step will start with the word <code>data</code> and end with a statement of <code>run;</code>.
+      A PROC step will start with the word <code>proc</code> and also end with <code>run;</code>. Good practice
+      is to proceed any step that produces output with the word <code>title</code> to create a global statement
+      labeling the data for readability. Within these steps, some of the additional statement keywords include:
+      <ul>
+        <li><code>infile</code> - this statement will direct SAS to where data values are coming from</li>
+        <li><code>input</code> - will process the raw data from the <code>infile</code> as determined
+        by the format given (more in the <a href = "#Input_and_Formatting">Input and Formatting</a> section).</li>
+      </ul>
     </p>
   </section>
-    <section class = "main-section" id = "Introduction">
+    <section class = "main-section" id = "Windowing_Environment">
     <header>
-      <h1>Introduction</h1>
+      <h1>Windowing Environment</h1>
     </header>
     <p>
-      SAS is a thing. It is a good thing. It does stuff. And things. Data.
+      SAS is divided into several different windows, each providing a specific portion of the current
+      environment. These are divided up as follows:
+      <ul>
+        <li>Code - This is where you will write the code to be executed by SAS. It has a "Submit"
+          button to allow you to run the code.
+        </li>
+        <li>Output - This window will show the results of running the parts of your code intended to
+          generate output.
+        </li>
+        <li>Log - This window displays the dataflow and any error or warning messages resulting from
+          the running of your program, as well as any technical details like processing time.
+        </li>
+        <li>Explorer - 
+        </li>
+      </ul>
     </p>
   </section>
     <section class = "main-section" id = "Introduction">
