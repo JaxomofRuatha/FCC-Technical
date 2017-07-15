@@ -82,9 +82,13 @@
       is to proceed any step that produces output with the word <code>title</code> to create a global statement
       labeling the data for readability. Within these steps, some of the additional statement keywords include:
       <ul>
-        <li><code>infile</code> - this statement will direct SAS to where data values are coming from</li>
-        <li><code>input</code> - will process the raw data from the <code>infile</code> as determined
+        <li><code>INFILE</code> - this statement will direct SAS to where data values are coming from</li>
+        <li><code>INPUT</code> - will process the raw data from the <code>infile</code> as determined
         by the format given (more in the <a href = "#Input_and_Formatting">Input and Formatting</a> section).</li>
+        <li><code>DATALINES</code> - signals SAS to begin reading the data on the next line.</li>
+        <li><code>LENGTH</code> - used before <code>INPUT</code> statement to dictate maximum length of variable name. Ex: <code>LENGTH [variable] $12</code> creates variable with maximum length of 12.</li>
+        <li><code>SET</code> - statement used to copy a data set.</li>
+        <li><code>IF</code> - statement used to filter data, only keeping observations meeting the conditions specified.</li>
       </ul>
     </p>
   </section>
@@ -110,17 +114,17 @@
       </ul>
     </p>
   </section>
-    <section class = "main-section" id = "Introduction">
+    <section class = "main-section" id = "Input_and_Formatting">
     <header>
-      <h1>Introduction</h1>
+      <h1>Input and Formatting</h1>
     </header>
     <p>
       SAS is a thing. It is a good thing. It does stuff. And things. Data.
     </p>
   </section>
-    <section class = "main-section" id = "Introduction">
+    <section class = "main-section" id = "Libraries">
     <header>
-      <h1>Introduction</h1>
+      <h1>Libraries</h1>
     </header>
     <p>
       SAS is a thing. It is a good thing. It does stuff. And things. Data.
