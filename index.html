@@ -31,6 +31,9 @@
     <li>
       <a href = "#Libraries" class = "nav-link">Libraries</a>
     </li>
+    <li>
+      <a href = "#Proc_Statements" class = "nav-link">PROC Statements</a>
+    </li>
   </ul>
  </nav>
  <main id = "main-doc">
@@ -89,6 +92,7 @@
         <li><code>LENGTH</code> - used before <code>INPUT</code> statement to dictate maximum length of variable name. Ex: <code>LENGTH [variable] $12</code> creates variable with maximum length of 12.</li>
         <li><code>SET</code> - statement used to copy a data set.</li>
         <li><code>IF</code> - statement used to filter data, only keeping observations meeting the conditions specified.</li>
+        <li><code>LIBNAME</code> - defines the creation of a new library (takes definitions for name and directory)</li>
       </ul>
     </p>
   </section>
@@ -122,12 +126,27 @@
       SAS is a thing. It is a good thing. It does stuff. And things. Data.
     </p>
   </section>
-    <section class = "main-section" id = "Libraries">
+  <section class = "main-section" id = "Libraries">
     <header>
       <h1>Libraries</h1>
     </header>
     <p>
-      SAS is a thing. It is a good thing. It does stuff. And things. Data.
+      Libraries show up under the "Libraries" folder within the Explorer window. You can reference a
+      data set within a library using the notation <code>[LIBRARYNAME].[DATASETNAME]</code>
+    </p>
+    <p>
+      There are two different types of libraries in SAS: WORK and PERMANENT. The WORK library is
+      a temporary library with all the working data sets, and will be deleted after the program is closed.
+      The remaining libraries are part of the PERMANENT library, and will be saved after closing.
+    </p>
+  </section>
+  <section class = "main-section" id = "Proc_Statements">
+    <header>
+      <h1>PROC Statements</h1>
+    </header>
+    <p>
+      <code>PROC Export</code> - allows to export SAS data file into an external file like an Excel
+      spreadsheet or text file.
     </p>
   </section>
  </main>
