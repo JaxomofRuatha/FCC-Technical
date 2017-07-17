@@ -32,7 +32,7 @@
       <a href = "#Libraries" class = "nav-link">Libraries</a>
     </li>
     <li>
-      <a href = "#Proc_Statements" class = "nav-link">PROC Statements</a>
+      <a href = "#Procedure_Statements" class = "nav-link">Procedure Statements</a>
     </li>
   </ul>
  </nav>
@@ -93,6 +93,9 @@
         <li><code>SET</code> - statement used to copy a data set.</li>
         <li><code>IF</code> - statement used to filter data, only keeping observations meeting the conditions specified.</li>
         <li><code>LIBNAME</code> - defines the creation of a new library (takes definitions for name and directory)</li>
+        <li><code>LABEL</code> - defines a data set label, which is displayed in certain outputs.</li>
+        <li><code>COMMENT</code> - keyword can be used to denote a strictly comment statement. This can
+        also be done using <code>*;</code> and <code>/*  */</code></li>
       </ul>
     </p>
   </section>
@@ -113,7 +116,8 @@
         <li>Log - This window displays the dataflow and any error or warning messages resulting from
           the running of your program, as well as any technical details like processing time.
         </li>
-        <li>Explorer - 
+        <li>Explorer - This section allows for exploring of libraries and system directories containing
+          data sets and file trees.
         </li>
       </ul>
     </p>
@@ -140,13 +144,39 @@
       The remaining libraries are part of the PERMANENT library, and will be saved after closing.
     </p>
   </section>
-  <section class = "main-section" id = "Proc_Statements">
+  <section class = "main-section" id = "Procedure_Statements">
     <header>
-      <h1>PROC Statements</h1>
+      <h1>Procedure Statements</h1>
     </header>
     <p>
       <code>PROC Export</code> - allows to export SAS data file into an external file like an Excel
-      spreadsheet or text file.
+      spreadsheet or text file. This statement takes 4 arguments:
+      <ol>
+        <li><code>DATA</code> - selects the data set to use for exporting.</li>
+        <li><code>OUTFILE</code> - determines the file path that will be created when exporting.</li>
+        <li><code>REPLACE</code> - option to overwrite the exporting file if it already exists
+        on the stated path (recommended to always use).</li>
+        <li><code>DBMS</code> - specifies the file type for the export (Ex: <code>xls</code> for
+        Excel spreadsheet).</li>
+      </ol>
+    </p>
+    <p>
+      <code>PROC Print</code> - 
+    </p>
+    <p>
+      <code>PROC Contents</code> - 
+    </p>
+    <p>
+      <code>PROC Datasets</code> - 
+    </p>
+    <p>
+      <code>PROC Options</code> - 
+    </p>
+    <p>
+      <code>PROC Means</code> - 
+    </p>
+    <p>
+      <code>PROC Transpose</code> - 
     </p>
   </section>
  </main>
