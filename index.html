@@ -127,7 +127,9 @@
       <h1>Input and Formatting</h1>
     </header>
     <p>
-      SAS is a thing. It is a good thing. It does stuff. And things. Data.
+      By default, the infile will be read and parsed based on blanks as a delimeter of data inputs. This
+      can be changed to several different options depending on the type of infile being used and original
+      formatting of the data to be read.
     </p>
   </section>
   <section class = "main-section" id = "Libraries">
@@ -161,22 +163,28 @@
       </ol>
     </p>
     <p>
-      <code>PROC Print</code> - 
+      <code>PROC Print</code> - prints variables for observations in a data set, with no options will
+      print all of each, but has options to filter what prints in the report.
     </p>
     <p>
-      <code>PROC Contents</code> - 
+      <code>PROC Contents</code> - Creates a description of the data set instead of the data values.
     </p>
     <p>
-      <code>PROC Datasets</code> - 
+      <code>PROC Datasets</code> - Generates a detailed listing of the members of a data library.
     </p>
     <p>
-      <code>PROC Options</code> - 
+      <code>PROC Options</code> - Lists the current SAS system settings, takes arguments to make changes.
     </p>
     <p>
-      <code>PROC Means</code> - 
+      <code>PROC Means</code> - Provides descriptive statistics for numeric variables in a data set.
     </p>
     <p>
-      <code>PROC Transpose</code> - 
+      <code>PROC Transpose</code> - Restructures values for output, turning selected variables into
+      observations.
+    </p>
+    <p>
+      <code>PROC SQL</code> - Allows for the usage of SQL query language in obtaining filtered portions
+      of a data set or modifying/creating data sets.
     </p>
   </section>
  </main>
